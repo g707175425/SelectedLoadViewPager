@@ -7,17 +7,20 @@
 ###代码中实现:
 
 ####1.在XML中引入
+```
 	<cn.schope.lightning.view.SelectedLoadViewPager
         android:id="@+id/vp_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+```
 ####2.在代码中监听页面改变事件,在监听中刷新数据
+```
 	vp_list.setOnPageSelectedFlushListener(new SelectedLoadViewPager.OnPageSelectedFlushListener() {
 			@Override
 			public void onPageSelected(int position) {
 				flushData(position);
 			}
 		});
-
+```
 
 by QQ:707175425
